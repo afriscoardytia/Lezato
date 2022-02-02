@@ -1,0 +1,82 @@
+html,
+body {
+    background-color: #f0f0f2 !important;
+}
+
+.footer {
+    background: linear-gradient(to right, #fe4040,#cfb72d);
+    border-top-left-radius: 40px !important;
+    border-top-right-radius: 40px !important;
+}
+
+.a {
+    color: rgb(255, 255, 255) !important;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+.a.active::before {
+    color: #ffffff !important;
+}
+
+.tab .a.active::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 0px;
+    background-color: transparent !important;
+}
+
+.judul {
+    font-size: 25px;
+    text-align: center;
+}
+
+.sub-judul {
+    text-align: center;
+}
+
+.sub {
+    font-size: 17px;
+}
+
+.isi {
+    text-align: justify !important;
+    margin-bottom: 50px !important;
+}
+
+.s {
+    background-color: transparent !important;
+    border: 1px solid white !important;
+    color: white !important;
+    border-radius: 12px !important;
+}
+
+input {
+    color: white !important;
+}
+
+.teks {
+    font-size: 10px;
+    margin-top: 7px !important;
+}
+
+.list {
+    border: 0 !important;
+}
+
+.header {
+    background: linear-gradient(to right, #fe4040,#cfb72d);
+}
+
+.ba {
+    background: linear-gradient(to right, #fe4040,#cfb72d);
+    padding-bottom: 20px !important;
+    border-radius: 0 0 100% 100%;
+}
+
+.a {
+    border-radius: 12px !important;
+}

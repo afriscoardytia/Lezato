@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="mobileui/style.css">
+    <meta name="format-detection" content="telephone=no">
+    <meta charset="utf-8">
+    <meta name="msapplication-tap-highlight" content="no">
+    <meta name="viewport"
+        content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+    <link rel="stylesheet" type="text/css" href="css/allresep.css">
+    <title>Apache Cordova</title>
+</head>
+
+<body>
+    <div class="header">
+        <div class="left">
+            <a href="javascript:history.back()"><button class="icon ion-ios-arrow-back"></button></a>
+        </div>
+        <h1 class="title align-center text-white">All Resep</h1>
+        <div class="right">
+            <button class="icon ion-search" id="btnSearch"></button>
+        </div>
+    </div>
+
+
+    <div class="content has-header">
+        <div class="ba padding">
+            <form id="form-search" name="formsearch" method="GET" class="padding">
+                <div class="list no-border">
+                    <div class="item radius s">
+                        <input type="text" id="search" name="search" placeholder="Search by name"
+                            class="placeholder-white">
+                    </div>
+                    <br><br>
+                    <!-- <p class="align-center teks text-white">Rekomendasi akan muncul dibawah
+                    </p> -->
+                </div>
+            </form>
+        </div>
+        <div class="list margin-top padding no-border" id="isi">
+
+        </div>
+    </div>
+    <script type=" text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="cordova.js"></script>
+    <script type="text/javascript" src="mobileui/mobileui.js"></script>
+    <script type="text/javascript" src="js/allresep.js"></script>
+</body>
+
+</html>

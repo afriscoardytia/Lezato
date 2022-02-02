@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" type="text/css" href="mobileui/style.css">
+  <meta name="format-detection" content="telephone=no">
+  <meta charset="utf-8">
+  <meta name="msapplication-tap-highlight" content="no">
+  <meta name="viewport"
+    content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+  <link rel="stylesheet" type="text/css" href="css/index.css">
+  <!-- <link rel="stylesheet" href="css/bootstrap.min.css"> -->
+  <title>Apache Cordova</title>
+</head>
+
+<body>
+
+  <!-- Swiper -->
+  <div class="swiper-container">
+    <div class="parallax-bg" data-swiper-parallax="-23%"></div>
+    <div class="swiper-wrapper">
+      <div class="swiper-slide vertical-align-center">
+        <div class="text" data-swiper-parallax="-100">
+          <img src="img/lezato.png" alt="" width="160px">
+        </div>
+      </div>
+      <!-- <div class="swiper-slide vertical-align-center">
+        <div class="title" data-swiper-parallax="-300" data-swiper-parallax-opacity="0"><i class="icon ion-pizza"></i>
+        </div>
+        <div class="subtitle" data-swiper-parallax="-200">Masak Apa</div>
+        <div class="text" data-swiper-parallax="-100">
+          <p>Merupakan sebuah inovasi sistem rekomendasi masak masakan apa yang sesuai dengan bahan-bahan
+            makanan yang tersedia di rumah.</p>
+        </div>
+      </div> -->
+      <div class="swiper-slide vertical-align-center">
+        <div class="coba align-left">
+          <div class="text" data-swiper-parallax="-100">
+            <form id="form-login" name="formLogin" method="POST">
+              <div class="list no-border">
+                <div class="item radius icon ion-email o">
+                  <input type="email" id="login-email" name="loginEmail" placeholder="Email" class="placeholder-white">
+                </div>
+                <br><br>
+                <div class="item radius icon ion-locked o">
+                  <input type="password" id="login-pass" name="loginPass" placeholder="Password"
+                    class="placeholder-white">
+                </div>
+                <br><br>
+                <button type="submit" id="btnLogin" name="btnLogin" class="white radius full o">Login</button>
+                <br>
+                <p class="align-center teks">Haven't all ready account? <a href="" class="reg"><u>Register</u></a>
+                </p>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-slide vertical-align-center">
+        <div class="coba align-left">
+          <div class="text" data-swiper-parallax="-100">
+            <div class="list no-border">
+              <div class="item radius icon ion-person o">
+                <input type="text" placeholder="Nama" class="placeholder-white" id="sign-nama">
+              </div>
+              <br><br>
+              <div class="item radius icon ion-email o">
+                <input type="email" placeholder="Email" class="placeholder-white" id="sign-email">
+              </div>
+              <br><br>
+              <div class="item radius icon ion-locked o">
+                <input type="password" placeholder="Password" class="placeholder-white" id="sign-pass">
+              </div>
+              <br><br>
+              <button type="submit" class="white radius full o" id="btnSignUp">Register</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Add Pagination -->
+    <div class="swiper-pagination swiper-pagination-white"></div>
+  </div>
+
+  <script src="js/swiper.min.js"></script>
+  <script>
+    var swiper = new Swiper('.swiper-container', {
+      speed: 600,
+      parallax: true,
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+      navigation: {
+        nextEl: '.reg',
+      },
+    });
+  </script>
+  <script type="text/javascript" src="js/jquery.min.js"></script>
+  <script type="text/javascript" src="cordova.js"></script>
+  <script type="text/javascript" src="mobileui/mobileui.js"></script>
+  <script type="text/javascript" src="js/index.js"></script>
+  <script type="text/javascript" src="js/jquery.validate.min.js"></script>
+</body>
+
+</html>

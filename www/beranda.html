@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="mobileui/style.css">
+    <meta name="format-detection" content="telephone=no">
+    <meta charset="utf-8">
+    <meta name="msapplication-tap-highlight" content="no">
+    <meta name="viewport"
+        content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+    <link rel="stylesheet" type="text/css" href="css/beranda.css">
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <title>Apache Cordova</title>
+</head>
+
+<body>
+    <div class="s tab fd">
+        <button class=" df circle icon ion-android-add-circle thk" onclick="openTab('add')"></button>
+    </div>
+    
+    <div class="footer white shadow tab sd">
+        <button class=" ds icon ion-android-home active" onclick="openTab('home')"></button>
+        <button class="ds icon ion-heart" onclick="openTab('star')"></button>
+        <button></button>
+        <!-- <button class="icon ion-android-add-circle" onclick="openTab('add')"></button> -->
+        <button class="ds icon ion-android-notifications" onclick="openTab('notif')"></button>
+        <button class="ds icon ion-android-person" onclick="openTab('account')"></button>
+    </div>
+    <div class="asa">
+        <img src=" img/lezato.png" alt="" srcset="" width="52px" class="logo">
+    </div>
+    <div class="tab-content active content lol" id="home">
+        <div class="as padding">
+            <div class="menuu">
+                <div class="sub-menu padding">
+                    <div class="row padding align-center">
+                        <div class="col margin-bottom">
+                            <a href="masakapa.html">
+                                <i class="icon ion-android-restaurant white"></i>
+                                <p class="text-white">Masak Apa</p>
+                            </a>
+                        </div>
+                        </a>
+                        <div class="col margin-bottom">
+                            <a href="allresep.html">
+                                <i class="icon ion-clipboard white"></i>
+                                <p class="text-white">All Resep</p>
+                            </a>
+                        </div>
+                        <div class="col margin-bottom">
+                            <a href="allvideo.html">
+                                <i class="icon ion-ios-videocam white"></i>
+                                <p class="text-white">All Video</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- <div class="list margin-top padding no-border" id="isi">
+            <h3>List Resep Terbaru</h3>
+        </div> -->
+        <div class="padding margin-top">
+            <span class="text-small text-bold">Kategori Wilayah</span>
+        </div>
+        <div class="padding">
+            <div class="row-between">
+                <a href="jawa.html">
+                <div class="col-20 x">
+                  Jawa
+                </div>
+            </a>
+            <a href="sumatera.html">
+                <div class="col-20 x">
+                  Sumatera
+                </div>
+            </a>
+            <a href="bali.html">
+                <div class="col-20 x">
+                  Bali
+                </div>
+            </a>
+            <a href="kalimantan.html">
+                <div class="col-20 x">
+                  Kalimantan
+                </div>
+            </a>
+            <a href="papua.html">
+                <div class="col-20 x">
+                    Papua
+                  </div>
+              </div>
+            </a>
+        </div>
+        <div class="padding margin-top">
+            <span class="text-small text-bold">Resep Terbaru</span>
+        </div>
+        
+        <div id="isi"></div>
+    <div class="row">
+        <div class="col-55 cover radius margin no-padding" style="background-color: grey;">
+            <div id="isidua"></div>
+        </div>
+        <div class="col cover radius margin no-padding" style="background-color: grey;">
+            <div id="isitiga"></div>
+        </div>
+        
+    </div>
+          
+          
+        <!-- <div class="swiper-container">
+            <div class="swiper-wrapper">
+                
+              <div class="swiper-slide">Slide 1</div>
+              <div class="swiper-slide">Slide 2</div>
+              <div class="swiper-slide">Slide 3</div>
+              <div class="swiper-slide">Slide 4</div>
+              <div class="swiper-slide">Slide 5</div>
+              <div class="swiper-slide">Slide 6</div>
+              <div class="swiper-slide">Slide 7</div>
+              <div class="swiper-slide">Slide 8</div>
+              <div class="swiper-slide">Slide 9</div>
+              <div class="swiper-slide">Slide 10</div>
+            </div>
+          </div> -->
+    </div>
+    <div class="tab-content content" id="star">
+        <div class="ba padding"></div>
+        <div class="padding">
+            <h2 class="padding text-black">Mohon maaf, menu star ini belum selesai dibuat</h2>
+            <!-- <div class="list a">
+                <div class="item" id="isi_star">
+
+                </div>
+            </div> -->
+        </div>
+    </div>
+    <div class="tab-content content lol" id="add">
+        <div class="ba padding"></div>
+        <div class="padding">
+            <div class="padding">
+                <div class="list no-border">
+                    <p class="label">Nama Masakan</p>
+                    <div class="item radius add">
+                        <input type="text" id="nama_masakan" name="nama_masakan" placeholder="Soto Babat"
+                            class="placeholder-black">
+                    </div>
+                    <br><br>
+                    <p class="label">Bahan</p>
+                    <div class="item radius add">
+                        <input type="text" id="bahan" name="bahan" placeholder="Babat 1kg, Cabai 1kg"
+                            class="placeholder-black">
+                    </div>
+                    <br><br>
+                    <p class="label">Langkah Pembuatan</p>
+                    <div class="item radius add">
+                        <input type="text" id="langkah_pembuatan" name="langkah_pembuatan"
+                            placeholder="Cuci babat dengan bersih" class="placeholder-black">
+                    </div>
+                    <br><br>
+                    <p class="label">Link Video Youtube</p>
+                    <div class="item radius add">
+                        <input type="text" id="video" name="video" placeholder="https://youtu.be/uL6RK5xPksU"
+                            class="placeholder-black">
+                    </div>
+                    <br><br><br>
+                    <button type="submit" class="full btn" id="btnadd">Submit</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="tab-content" id="notif">
+        <div class="ba padding"></div>
+        <div class="padding">
+            <h2 class="padding text-black">Mohon maaf, menu notif ini belum selesai dibuat</h2>
+        </div>
+    </div>
+    <div class="tab-content content" id="account">
+        <div class="ba padding"></div>
+        <div class="cover align-center blend-soft-light" id="data">
+
+        </div>
+        <div class="list j">
+            <!-- <div class="item" id="btnAkun">
+                <div class="left">
+                    <div class="icon-circle text-black border-black">
+                        <i class="icon ion-android-person"></i>
+                    </div>
+                </div>
+                <h2>Account</h2>
+                <p class="text-grey-500">Your Profile Account</p>
+            </div> -->
+
+            <div class="item" id="btnLogout">
+                <div class="left">
+                    <div class="icon-circle text-black border-black">
+                        <i class="icon ion-log-out"></i>
+                    </div>
+                </div>
+                <h2>Logout</h2>
+                <p class="text-grey-500">You will loged out from this app</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/swiper.min.js"></script>
+  <script>
+    var swiper = new Swiper('.swiper-container', {
+      slidesPerView: 4,
+      spaceBetween: 30,
+    //   centeredSlides: true,
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+    });
+  </script>
+    
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="cordova.js"></script>
+    <script type="text/javascript" src="mobileui/mobileui.js"></script>
+    <script type="text/javascript" src="js/beranda.js"></script>
+</body>
+
+</html>
